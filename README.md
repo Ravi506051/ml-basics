@@ -100,3 +100,9 @@ For each notebook or experiment, record:
 - A short note on errors, limitations, and the next experiment to try
 
 Keeping these details beside the code makes model comparisons easier to reproduce and helps distinguish measured results from illustrative examples.
+
+## Project Development Notes
+
+Organize notebooks by task and include a baseline, train/test split, evaluation metrics, and a short interpretation for every experiment. Prevent leakage by fitting preprocessing only on training data.
+
+For reproducible updates, record the dataset/source version, environment and dependency versions, preprocessing choices, and actual outputs from each run. Keep sample values clearly labelled and do not publish secrets or private data.
