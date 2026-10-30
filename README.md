@@ -87,3 +87,16 @@ Ravi Kumar Rao
 GitHub: https://github.com/Ravi506051
 
 This repository is part of my ongoing learning journey in Python, machine learning, and data science.
+
+## Recommended Experiment Record
+
+For each notebook or experiment, record:
+
+- The problem type (regression, classification, or clustering)
+- Dataset source and target/features, where applicable
+- Preprocessing and train/test split strategy
+- Algorithm and important hyperparameters
+- Evaluation metric and the result from the actual run
+- A short note on errors, limitations, and the next experiment to try
+
+Keeping these details beside the code makes model comparisons easier to reproduce and helps distinguish measured results from illustrative examples.
