@@ -106,3 +106,9 @@ Keeping these details beside the code makes model comparisons easier to reproduc
 Organize notebooks by task and include a baseline, train/test split, evaluation metrics, and a short interpretation for every experiment. Prevent leakage by fitting preprocessing only on training data.
 
 For reproducible updates, record the dataset/source version, environment and dependency versions, preprocessing choices, and actual outputs from each run. Keep sample values clearly labelled and do not publish secrets or private data.
+
+### Technical Deep Dive
+
+For supervised learning, establish a simple baseline before tuning a more complex estimator. Put imputation, scaling, encoding, and the estimator into a Scikit-learn Pipeline; use ColumnTransformer for mixed numeric and categorical features. Fit preprocessing only on training folds, then use cross-validation for model selection and a final untouched test set for reporting.
+
+For clustering, scale distance-sensitive features and interpret cluster profiles in original units. Record random seeds, split strategy, hyperparameters, and measured metrics for every experiment.
