@@ -112,3 +112,13 @@ For reproducible updates, record the dataset/source version, environment and dep
 For supervised learning, establish a simple baseline before tuning a more complex estimator. Put imputation, scaling, encoding, and the estimator into a Scikit-learn Pipeline; use ColumnTransformer for mixed numeric and categorical features. Fit preprocessing only on training folds, then use cross-validation for model selection and a final untouched test set for reporting.
 
 For clustering, scale distance-sensitive features and interpret cluster profiles in original units. Record random seeds, split strategy, hyperparameters, and measured metrics for every experiment.
+
+## Learning and Experimentation Standards
+
+For each notebook or experiment, state the learning objective, dataset, target variable (when applicable), preprocessing steps, and expected output.
+
+- Establish a simple baseline before trying more complex algorithms.
+- Use train/validation/test separation where appropriate and fit preprocessing only on training data to prevent leakage.
+- Select metrics that match the task: regression (MAE/RMSE/R-squared), classification (precision/recall/F1), and clustering (silhouette score plus cluster profiling).
+- Fix and record random seeds for repeatable comparisons.
+- Include a short interpretation of results and known limitations rather than reporting a score without context.
