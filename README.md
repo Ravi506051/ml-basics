@@ -122,3 +122,11 @@ For each notebook or experiment, state the learning objective, dataset, target v
 - Select metrics that match the task: regression (MAE/RMSE/R-squared), classification (precision/recall/F1), and clustering (silhouette score plus cluster profiling).
 - Fix and record random seeds for repeatable comparisons.
 - Include a short interpretation of results and known limitations rather than reporting a score without context.
+
+## Experiment Design and Model Quality
+
+- Establish a simple baseline before training a more complex estimator.
+- Use pipelines to keep preprocessing fitted only on training data and reduce leakage risk.
+- Select metrics according to the task: MAE/RMSE for regression and precision/recall/F1 for classification.
+- Use cross-validation for model comparison and reserve a final test set for an unbiased estimate.
+- Record random seeds, dataset versions, preprocessing choices, and measured results for reproducibility.
