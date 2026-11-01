@@ -130,3 +130,10 @@ For each notebook or experiment, state the learning objective, dataset, target v
 - Select metrics according to the task: MAE/RMSE for regression and precision/recall/F1 for classification.
 - Use cross-validation for model comparison and reserve a final test set for an unbiased estimate.
 - Record random seeds, dataset versions, preprocessing choices, and measured results for reproducibility.
+
+## Experiment Design Checklist
+
+- Start every experiment with a simple baseline and a clearly defined target variable.
+- Fit imputers, encoders, and scalers on training data only; use pipelines to reduce leakage risk.
+- Select metrics that match the task and compare models on the same split or cross-validation folds.
+- Record dataset provenance, random seed, hyperparameters, dependency versions, and actual results.
