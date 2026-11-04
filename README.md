@@ -38,3 +38,15 @@ Organize examples by topic, add small exercises, include unit tests for reusable
 
 ## Maintainer
 **Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
+
+## Skills Demonstrated
+
+- Regression and classification fundamentals
+- preprocessing
+- train/test validation
+- model evaluation
+- reproducible experiments.
+
+## Portfolio Context
+
+This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
